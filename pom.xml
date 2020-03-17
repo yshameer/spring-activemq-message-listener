@@ -20,8 +20,9 @@
         <lombok.version>1.16.20</lombok.version>
         <activemq.version>5.15.11</activemq.version>
         <camel.version>2.23.1</camel.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
+        <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
         <spring-camel.activemq.starter.version>1.0.0-SNAPSHOT</spring-camel.activemq.starter.version>
-        <spring-cloud-contract-wiremock.version>2.2.2.RELEASE</spring-cloud-contract-wiremock.version>
     </properties>
 
     <dependencies>
@@ -63,16 +64,6 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.jaxrs</groupId>
-            <artifactId>jackson-jaxrs-json-provider</artifactId>
-            <version>2.9.5</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.1</version>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
@@ -81,30 +72,18 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-            <version>2.0.1.Final</version>
+            <version>${validation-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>6.0.13.Final</version>
+            <version>${hibernate-validator.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.activemq.tooling</groupId>
             <artifactId>activemq-junit</artifactId>
             <version>${activemq.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.tomakehurst</groupId>
-            <artifactId>wiremock-standalone</artifactId>
-            <version>2.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-contract-wiremock</artifactId>
-            <version>${spring-cloud-contract-wiremock.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
