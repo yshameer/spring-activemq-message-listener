@@ -21,7 +21,7 @@
         <activemq.version>5.15.11</activemq.version>
         <camel.version>2.23.1</camel.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
-        <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.0.20.Final</hibernate-validator.version>
         <spring-camel.activemq.starter.version>1.0.0-SNAPSHOT</spring-camel.activemq.starter.version>
     </properties>
 
